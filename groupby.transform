@@ -1,0 +1,3 @@
+#http://stackoverflow.com/questions/15705630/python-getting-the-row-which-has-the-max-value-in-groups-using-groupby
+idx = df.groupby(['Mt'])['count'].transform(max) == df['count']
+df[idx]
